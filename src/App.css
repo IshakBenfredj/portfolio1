@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Vazirmatn:wght@200;300;400;500;600;700;800;900&display=swap');
+/* 
+font-family: 'Clicker Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Vazirmatn', sans-serif;
+*/
+:root {
+	--main-color: rgb(29, 153, 141);
+	--color-pr: #fafafa;
+	--color-sc: #fcfcfc;
+	--color-th: #777;
+	--color-fr: #555;
+	--title-color: #222;
+	--text-color: #444;
+	--main-transition: .3s;
+}
+body.night {
+	--main-color: #0072d3;
+	--color-pr: #091233;
+	--color-sc: #00056b;
+	--color-th: #00068e;
+	--color-fr: #0008b2;
+	/* --color-pr: #040838;
+	--color-sc: #040855;
+	--color-th: #040877;
+	--color-fr: #040899; */
+	--title-color: #fff;
+	--text-color: #ddd;
+}
+body.arabic {
+	direction: rtl;
+	font-family: 'Vazirmatn', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: var(--color-pr);
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+::selection {
+	background-color: var(--main-color);
+	color: #fff;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Meduim */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1073px;
+    }
+}
+/* GLOBAL CSS */
+.links {
+	margin-top: 20px;
+}
+.links a {
+	display: inline-block;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 40px;
+    margin-right: 20px;
+	font-size: 18px;
+    font-weight: 600;
+}
+section {
+	padding: 50px 0;
+}
+.main-title {
+    margin: 0 30px 55px;
+    font-size: 35px;
+    color: var(--text-color);
+    position: relative;
+	width: fit-content;
+	text-transform: uppercase;
+}
+.main-title::before,
+.main-title::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	background-color: var(--main-color);
+	left: 0;
+}
+.main-title::before {
+	width: 100%;
+	bottom: -7px;
+}
+.main-title::after {
+	width: 50%;
+	bottom: -20px;
+}
